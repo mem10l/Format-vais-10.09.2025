@@ -18,7 +18,7 @@ function viewTask(&$tasks) {
 }
 
 function displayTask(&$tasks) {
-    print_r("ID: , CONTENT: {$tasks['content']}, STATUS: {$tasks['status']}\n") ;
+    echo ("ID: , CONTENT: {$tasks['content']}, STATUS: {$tasks['status']}\n") ;
 }
 
 function addTask(&$tasks) {
@@ -28,7 +28,7 @@ function addTask(&$tasks) {
 }
 
 function deleteTask(&$tasks) {
-    $id = input("Ievadiet dzēšamā uzdevuma ID: ");
+    $id = readline("Ievadiet dzēšamā uzdevuma ID: ");
     if (isset($tasks[$id])) {
         unset($tasks[$id]);
         echo "Uzdevums dzēsts\n";
