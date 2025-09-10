@@ -105,7 +105,7 @@ do {
                 displayAllTasks($tasks);
                 break;
             case 6:
-                //
+                setStatus($tasks);
                 break;
             case 7:
                 echo "Uz redzēšanos!\n";
